@@ -8,11 +8,11 @@ import HeaderElements from "./headerElements";
 
 const Content = () => {
   return (
-    <View style={{ backgroundColor: "#F9F7F8" }}>
+    <View style={{ backgroundColor: "#F9F7F8", flex: 1 }}>
       <View style={styles.header}>
         <HeaderElements />
       </View>
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
         <BodyElements />
       </ScrollView>
       <Button />
